@@ -1,0 +1,12 @@
+public class Penny_Oleksyak extends Champion{
+
+    public Penny_Oleksyak(){
+        super((Country) new Canada_country(), new Swimming(), new ThirdPlace());
+    }
+
+    @Override
+    public void introducing() {
+        System.out.println("Hello everyone!" + "\n"+
+                "My name is Penny Oleksyak.");
+    }
+}
