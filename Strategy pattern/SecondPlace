@@ -1,0 +1,6 @@
+public class SecondPlace implements Place{
+    @Override
+    public void place() {
+        System.out.println("I took second place!");
+    }
+}
