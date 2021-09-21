@@ -1,0 +1,12 @@
+public class Harri_lavreisen extends Champion{
+
+    public Harri_lavreisen(){
+        super((Country) new Netherlands_Country(), new Cycling(), new SecondPlace());
+    }
+
+    @Override
+    public void introducing() {
+        System.out.println("Hello everyone!" + "\n"+
+                "My name is Harri lavreisen.");
+    }
+}
