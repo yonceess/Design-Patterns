@@ -1,0 +1,7 @@
+public class Men_Gymnastic implements Sport{
+
+    @Override
+    public void sport_type() {
+        System.out.println("I participated in the Olympiad in the direction of men's artistic gymnastics.");
+    }
+}
