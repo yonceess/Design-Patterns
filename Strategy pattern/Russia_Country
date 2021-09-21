@@ -1,0 +1,6 @@
+public class Russia_Country implements Country{
+    @Override
+    public void country_from() {
+        System.out.println("I am a representative of the Russian Federation.");
+    }
+}
