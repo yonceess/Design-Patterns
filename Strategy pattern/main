@@ -1,0 +1,25 @@
+public class main {
+    public static void main(String[] args){
+
+        Nikita_Nagorny  NikitaNagorny = new Nikita_Nagorny();
+
+        NikitaNagorny.introducing();
+        NikitaNagorny.performCountry();
+        NikitaNagorny.performPlace();
+        NikitaNagorny.performSport();
+
+        NikitaNagorny.setPlace(new ThirdPlace());
+
+        NikitaNagorny.performPlace();
+
+        System.out.println("------------------------------");
+
+
+        Harri_lavreisen HarriLavreisen = new Harri_lavreisen();
+
+        HarriLavreisen.introducing();
+        HarriLavreisen.performCountry();
+        HarriLavreisen.performPlace();
+        HarriLavreisen.performSport();
+    }
+}
