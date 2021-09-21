@@ -1,0 +1,6 @@
+public class Swimming implements Sport{
+    @Override
+    public void sport_type() {
+        System.out.println("I participated in the Olympiad in the direction of swimming.");
+    }
+}
