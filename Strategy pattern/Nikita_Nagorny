@@ -1,0 +1,12 @@
+public class Nikita_Nagorny extends Champion{
+
+    public Nikita_Nagorny (){
+        super(new Russia_Country(), new Men_Gymnastic(), new FirstPlace());
+    }
+
+    @Override
+    public void introducing() {
+        System.out.println("Hello everyone!" +"\n"+
+                "My name is Nikita Nagorny.");
+    }
+}
