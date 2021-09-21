@@ -1,0 +1,50 @@
+public abstract class Champion {
+
+   private Country country;
+    private Sport typeOfSport;
+    private Place place;
+
+    public Champion(Country country, Sport typeOfSport, Place place){
+        this.country = country;
+        this.typeOfSport = typeOfSport;
+        this.place = place;
+    }
+
+    public void performCountry(){
+        this.country.country_from();
+    }
+
+    public void performSport(){
+        this.typeOfSport.sport_type();
+    }
+
+    public void performPlace(){
+        this.place.place();
+    }
+
+    public abstract void introducing();
+
+    public Country getCountry(){
+        return country;
+    }
+
+    public Sport getTypeOfSport(){
+        return typeOfSport;
+    }
+
+    public Place getPlace() {
+        return place;
+    }
+
+    public void setCountry(Country country){
+        this.country = country;
+    }
+
+    public void setTypeOfSport(Sport typeOfSport) {
+        this.typeOfSport = typeOfSport;
+    }
+
+    public void setPlace(Place place){
+        this.place = place;
+    }
+}
