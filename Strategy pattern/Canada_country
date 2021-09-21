@@ -1,0 +1,6 @@
+public class Canada_country implements Sport{
+    @Override
+    public void sport_type() {
+        System.out.println("I am a representative of Canada.");
+    }
+}
