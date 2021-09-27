@@ -1,0 +1,19 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+
+        TravelAgencyApplication GoTour = new TravelAgencyApplication();
+
+        GoTour.addTour("Almaty - Georgia  (Date: 27.09 - 05.10)");
+
+        Subscriber subscriber = new Subscriber(GoTour, "Noah");
+        GoTour.registerUser(subscriber);
+        GoTour.addTour( "Nur-Sultan - Turkey  (Date: 10.10 - 20.10)");
+        GoTour.addTour("Almaty - Egypt  (Date: 27.10 - 05.11)");
+
+        GoTour.removeTour("Almaty - Egypt  (Date: 27.10 - 05.11)");
+
+
+    }
+}
