@@ -1,0 +1,23 @@
+
+public class Subscriber implements Observer {
+
+    private String first_name;
+
+    private TravelAgencyApplication travelAgency;
+
+
+    public Subscriber(TravelAgencyApplication travelAgency, String first_name) {
+        this.first_name = first_name;
+        this.travelAgency = travelAgency;
+
+    }
+
+    @Override
+    public void update() {
+        System.out.println("Hello, " + this.first_name + "! " + "\n" +"List of last minute tours is changed: " + "\n" + travelAgency.getTours());
+        System.out.println("__________________________________________________");
+    }
+
+
+
+}
