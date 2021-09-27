@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class TravelAgencyApplication implements Observable{
+
+
+    private List<String> tours = new ArrayList<>();
+    private List<Observer> subscribers = new ArrayList<>();
+
+    public void addTour(String tour){
+        this.tours.add(tour);
+        notifyAllMembers();
+    }
+
+    public void removeTour(String tour){
+        this.tours.remove(tour);
+        notifyAllMembers();
+    }
+
+
+    @Override
+    public void registerUser(Observer user) {
+        this.subscribers.add(user);
+    }
+
+    @Override
+    public void unregisterUser(Observer user) {
+        this.subscribers.remove(user);
+    }
+
+    @Override
+    public void notifyAllMembers() {
+        for(Observer user: subscribers){
+            user.update();
+        }
+    }
+
+    public List<String> getTours() {
+        return tours;
+    }
+
+}
