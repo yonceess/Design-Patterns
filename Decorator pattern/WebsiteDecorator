@@ -1,0 +1,14 @@
+public class WebsiteDecorator implements Website{
+
+    private Website website;
+
+    public WebsiteDecorator(Website website){
+        this.website = website;
+    }
+
+
+    @Override
+    public String websiteCreation() {
+        return website.websiteCreation();
+    }
+}
