@@ -1,0 +1,9 @@
+public class Main {
+    public static void main(String[] args){
+
+        Website website = new PHPwebsite(new JavaScriptWebsite(new CSSwebSite(new HTMLwebSite())));
+
+        System.out.println(website.websiteCreation());
+
+    }
+}
