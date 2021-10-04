@@ -1,0 +1,8 @@
+public class HTMLwebSite implements Website{
+    @Override
+    public String websiteCreation() {
+        return "Website structure created by HTML. ";
+    }
+
+
+}
