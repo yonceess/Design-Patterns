@@ -1,0 +1,14 @@
+public class JavaScriptWebsite extends WebsiteDecorator{
+    public JavaScriptWebsite(Website website) {
+        super(website);
+    }
+
+    String animationJavaScript(){
+        return "Provide animation with JavaScript. ";
+    }
+
+    @Override
+    public String websiteCreation() {
+        return super.websiteCreation() + animationJavaScript();
+    }
+}
