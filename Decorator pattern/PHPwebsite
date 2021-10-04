@@ -1,0 +1,14 @@
+public class PHPwebsite extends WebsiteDecorator{
+    public PHPwebsite(Website website) {
+        super(website);
+    }
+
+    String database(){
+        return "Connect website with database by PHP.";
+    }
+
+    @Override
+    public String websiteCreation() {
+        return super.websiteCreation() + database();
+    }
+}
