@@ -1,0 +1,14 @@
+public class CSSwebSite extends WebsiteDecorator{
+    public CSSwebSite(Website website) {
+        super(website);
+    }
+
+    String decorationWithCSS(){
+        return "Website is designed using CSS. ";
+    }
+
+    @Override
+    public String websiteCreation() {
+        return super.websiteCreation()+decorationWithCSS();
+    }
+}
