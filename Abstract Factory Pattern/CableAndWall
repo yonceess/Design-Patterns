@@ -1,0 +1,11 @@
+public class CableAndWall implements Fastening{
+    @Override
+    public String getComponent() {
+        return "to the cable and fastened to wall";
+    }
+
+    @Override
+    public String toString(){
+        return "to the cable and fastened to wall";
+    }
+}
