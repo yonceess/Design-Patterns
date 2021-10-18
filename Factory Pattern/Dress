@@ -1,0 +1,7 @@
+public class Dress implements Clothes{
+    @Override
+    public void typeOfCloth() {
+        System.out.println("Start of sewing dresses");
+    }
+
+}
