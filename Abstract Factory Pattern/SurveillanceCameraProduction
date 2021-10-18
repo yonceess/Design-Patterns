@@ -1,0 +1,11 @@
+public class SurveillanceCameraProduction implements ProductionCamera{
+    @Override
+    public Camera createCamera(Camera.Lens lens) {
+        return new SurveillanceCamera(lens);
+    }
+
+    @Override
+    public Fastening createFastening() {
+        return new CableAndWall();
+    }
+}
