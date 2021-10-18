@@ -1,0 +1,26 @@
+public class ProfessionalVideoCamera implements Camera{
+
+    public ProfessionalVideoCamera(Lens lens){
+        System.out.println("Professional video camera created with lens "+ lens+".");
+    }
+
+    @Override
+    public void provideQuality() {
+        System.out.println("Provided quality to the record is 4K");
+    }
+
+    @Override
+    public void startRecord() {
+        System.out.println("Professional video camera started a record...");
+    }
+
+    @Override
+    public void stopRecord() {
+        System.out.println("Professional video camera stopped a record...");
+    }
+
+    @Override
+    public void attachFastening(Fastening component){
+        System.out.println("Professional video camera attached "+ component);
+    }
+}
