@@ -1,0 +1,26 @@
+public class SurveillanceCamera implements Camera{
+
+    public SurveillanceCamera(Lens lens){
+        System.out.println("Surveillance camera created with lens "+ lens+".");
+    }
+
+    @Override
+    public void provideQuality() {
+        System.out.println("Provided quality to the record is 720p");
+    }
+
+    @Override
+    public void startRecord() {
+        System.out.println("Surveillance camera started a record...");
+    }
+
+    @Override
+    public void stopRecord() {
+        System.out.println("Surveillance camera stopped a record...");
+    }
+
+    @Override
+    public void attachFastening(Fastening component){
+        System.out.println("Surveillance camera attached "+ component + ".");
+    }
+}
