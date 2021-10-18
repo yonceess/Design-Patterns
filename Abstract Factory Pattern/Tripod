@@ -1,0 +1,11 @@
+public class Tripod implements Fastening{
+    @Override
+    public String getComponent() {
+        return "Tripod";
+    }
+
+    @Override
+    public String toString(){
+        return "Tripod";
+    }
+}
