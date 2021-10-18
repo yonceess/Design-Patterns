@@ -1,0 +1,8 @@
+public interface Camera {
+    enum Lens{ wide_angle, standard, narrow_angle }
+    void provideQuality();
+    void startRecord();
+    void attachFastening(Fastening component);
+    void stopRecord();
+
+}
