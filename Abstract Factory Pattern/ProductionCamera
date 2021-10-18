@@ -1,0 +1,6 @@
+public interface ProductionCamera {
+
+    Camera createCamera(Camera.Lens lens);
+
+    Fastening createFastening();
+}
