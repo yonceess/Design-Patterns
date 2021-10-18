@@ -1,0 +1,10 @@
+public class Pants implements Clothes{
+
+    @Override
+    public void typeOfCloth() {
+        System.out.println("Start of sewing pants");
+
+    }
+
+
+}
