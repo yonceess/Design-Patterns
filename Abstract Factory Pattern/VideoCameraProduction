@@ -1,0 +1,11 @@
+public class VideoCameraProduction implements ProductionCamera{
+    @Override
+    public Camera createCamera(Camera.Lens lens) {
+        return new ProfessionalVideoCamera(lens);
+    }
+
+    @Override
+    public Fastening createFastening() {
+        return new Tripod();
+    }
+}
