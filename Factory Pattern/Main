@@ -1,0 +1,12 @@
+public class Main {
+
+    public static void main(String [] args){
+        ClothesCreator clothesCreation = new DressCreator();
+
+        Clothes clothes = clothesCreation.createClothes();
+
+        clothes.typeOfCloth();
+
+
+    }
+}
