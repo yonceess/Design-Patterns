@@ -1,0 +1,33 @@
+public class Main {
+
+    private ProductionCamera production;
+
+    public Main(ProductionCamera productionCamera){
+        production = productionCamera;
+    }
+
+    public Camera createCamera(Camera.Lens lens){
+        Camera camera = production.createCamera(lens);
+        Fastening fastening = production.createFastening();
+        camera.attachFastening(fastening);
+        return camera;
+    }
+
+    public static void main(String [] args){
+        Main client = new Main(new VideoCameraProduction());
+        Camera camera1 = client.createCamera(Camera.Lens.wide_angle);
+
+        camera1.provideQuality();
+        camera1.startRecord();
+        camera1.stopRecord();
+
+        System.out.println("______________________________________");
+
+        Main client2 = new Main(new SurveillanceCameraProduction());
+        Camera camera2 = client2.createCamera(Camera.Lens.standard);
+
+        camera2.startRecord();
+        camera2.provideQuality();
+        camera2.stopRecord();
+    }
+}
