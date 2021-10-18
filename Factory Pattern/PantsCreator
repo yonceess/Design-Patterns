@@ -1,0 +1,7 @@
+public class PantsCreator implements ClothesCreator{
+
+    @Override
+    public Clothes createClothes() {
+        return  new Pants();
+    }
+}
