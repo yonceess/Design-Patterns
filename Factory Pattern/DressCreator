@@ -1,0 +1,6 @@
+public class DressCreator implements ClothesCreator{
+    @Override
+    public Clothes createClothes() {
+        return new Dress();
+    }
+}
