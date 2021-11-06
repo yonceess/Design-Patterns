@@ -1,0 +1,6 @@
+public class Lungs implements Breathing{
+    @Override
+    public void breathe_type() {
+        System.out.println("Breathings with lungs.");
+    }
+}
