@@ -1,0 +1,14 @@
+public class TriangleAdapter implements Area{
+
+    private Triangle triangle;
+
+    public TriangleAdapter(Triangle triangle){
+        this.triangle = triangle;
+    }
+
+    @Override
+    public void calculateRectangleArea() {
+        System.out.println("Adapter converts second side to height.");
+        triangle.calculateAreaBy1SideAndHeight();
+    }
+}
