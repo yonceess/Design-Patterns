@@ -1,0 +1,17 @@
+public class Tracker {
+    private boolean activatedSubscription;
+
+    public boolean isActivatedSubscription(){
+        return activatedSubscription;
+    }
+
+    public void startSubscription(){
+        System.out.println("Subscription is activated");
+    activatedSubscription=true;
+    }
+
+    public void stopSubscription(){
+        System.out.println("Subscription is not activated");
+    activatedSubscription = false;
+    }
+}
