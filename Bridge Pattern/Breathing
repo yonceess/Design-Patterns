@@ -1,0 +1,3 @@
+public interface Breathing {
+    void breathe_type();
+}
