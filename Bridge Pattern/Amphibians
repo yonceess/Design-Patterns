@@ -1,0 +1,26 @@
+public abstract class Amphibians {
+    protected String type;
+    protected String breath_type;
+    protected Breathing breathing;
+    protected Accommodation accommodation;
+
+    public Amphibians(String type){
+        this.type=type;
+    }
+
+    public abstract void output_info();
+
+
+
+
+    public void setType(Accommodation accommodation){
+        this.accommodation= accommodation;
+
+    }
+
+    public void setBreathe(Breathing breathing){
+        this.breathing = breathing;
+    }
+
+    public abstract void breath_type();
+}
