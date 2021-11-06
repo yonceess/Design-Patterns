@@ -1,0 +1,13 @@
+public class Main {
+
+    public static void main(String[] args){
+        Pupil pupil = new Pupil();
+        Area rec = new Rectangle();
+
+        Triangle tri = new Triangle();
+        TriangleAdapter adapter = new TriangleAdapter(tri);
+
+        pupil.calculateTheAreaOfShapes(rec);
+        pupil.calculateTheAreaOfShapes(adapter);
+    }
+}
