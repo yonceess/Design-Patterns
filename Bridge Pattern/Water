@@ -1,0 +1,7 @@
+public class Water implements Accommodation{
+
+    @Override
+    public void output_type() {
+        System.out.println("Water");
+    }
+}
