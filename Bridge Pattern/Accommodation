@@ -1,0 +1,3 @@
+public interface Accommodation {
+    void output_type();
+}
