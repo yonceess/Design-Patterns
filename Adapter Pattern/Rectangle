@@ -1,0 +1,7 @@
+public class Rectangle implements Area{
+    @Override
+    public void calculateRectangleArea() {
+        System.out.println("Area or the rectangle calculated by 2 sides of figure. "+"\n" +
+                "Area = side_1 * side_2.");
+    }
+}
