@@ -1,0 +1,26 @@
+public class Main {
+
+    public static void main(String [] args){
+        Accommodation land = new Land();
+        Accommodation water = new Water();
+        Amphibians triton = new Triton();
+        Breathing lungs = new Lungs();
+        Breathing gills = new Gills();
+
+        triton.setType(land);
+        triton.setBreathe(lungs);
+        triton.output_info();
+        triton.breath_type();
+
+        System.out.println("_______________________________________");
+
+        Amphibians salamander = new Salamander();
+        salamander.setType(water);
+        salamander.setBreathe(gills);
+        salamander.output_info();
+        salamander.breath_type();
+
+
+    }
+
+}
