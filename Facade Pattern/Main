@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String [] args){
+        Subscription subscription = new Subscription();
+        subscription.useSubscription();
+        Tracker tracker = new Tracker();
+        tracker.startSubscription();
+
+        User user = new User();
+        user.watchVideoBySubscription(tracker);
+
+        tracker.stopSubscription();
+        user.watchVideoBySubscription(tracker);
+    }
+}
