@@ -1,0 +1,6 @@
+public class Gills implements Breathing{
+    @Override
+    public void breathe_type() {
+        System.out.println("Breathing with gills.");
+    }
+}
