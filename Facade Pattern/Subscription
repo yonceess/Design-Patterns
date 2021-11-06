@@ -1,0 +1,5 @@
+public class Subscription {
+    public void useSubscription(){
+        System.out.println("Subscription purchased. ");
+    }
+}
