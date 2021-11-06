@@ -1,0 +1,6 @@
+public class Triangle {
+    void calculateAreaBy1SideAndHeight(){
+        System.out.println("Area or the triangle calculated by 1 side and 1 height of figure. "+"\n" +
+                "Area = side_1 * height * 0.5.");
+    }
+}
