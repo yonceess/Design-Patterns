@@ -1,0 +1,7 @@
+public class Pupil {
+
+    public void calculateTheAreaOfShapes(Area area){
+        System.out.println("Pupil wants to calculate the area of the shape.");
+        area.calculateRectangleArea();
+    }
+}
