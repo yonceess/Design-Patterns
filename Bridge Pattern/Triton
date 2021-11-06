@@ -1,0 +1,19 @@
+public class Triton  extends Amphibians {
+
+    public Triton() {
+        super("Triton");
+    }
+
+    @Override
+    public void output_info() {
+        System.out.println("Now " + type + " spending time in");
+        this.accommodation.output_type();
+
+
+    }
+
+    @Override
+    public void breath_type() {
+        this.breathing.breathe_type();
+    }
+}
